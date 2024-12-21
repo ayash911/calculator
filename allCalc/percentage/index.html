@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Percentage Calculator</h1>
+    <div class="calculator">
+      <div class="section">
+        <h3>Basic Percentage Calculator</h3>
+        <div class="form-group">
+          <label for="percentage">Percentage (%):</label>
+          <input
+            type="number"
+            id="percentage"
+            placeholder="Enter percentage (e.g., 10)"
+          />
+        </div>
+        <div class="form-group">
+          <label for="ofValue">Value:</label>
+          <input
+            type="number"
+            id="ofValue"
+            placeholder="Enter value (e.g., 200)"
+          />
+        </div>
+        <div class="button-container">
+          <button onclick="calculateBasic()">Calculate</button>
+          <button onclick="clearBasic()">Clear</button>
+        </div>
+        <div id="basicResult" class="result" style="display: none"></div>
+      </div>
+
+      <div class="section">
+        <h3>Percentage Difference Calculator</h3>
+        <div class="form-group">
+          <label for="value1">Value 1:</label>
+          <input type="number" id="value1" placeholder="Enter first value" />
+        </div>
+        <div class="form-group">
+          <label for="value2">Value 2:</label>
+          <input type="number" id="value2" placeholder="Enter second value" />
+        </div>
+        <div class="button-container">
+          <button onclick="calculateDifference()">Calculate</button>
+          <button onclick="clearDifference()">Clear</button>
+        </div>
+        <div id="differenceResult" class="result" style="display: none"></div>
+      </div>
+    </div>
+
+    <div class="center">
+      <a href="../index.html">
+        <button>
+          More Calculators
+          <img src="../../images/next.png" alt="Next" />
+        </button>
+      </a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Yash Agrawal. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

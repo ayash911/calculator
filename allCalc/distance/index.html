@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculators</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Distance Converter</h2>
+      <div class="converter">
+        <h3>Convert Distance from one unit to another.</h3>
+        <div>
+          <label for="from">From:</label>
+          <select id="from">
+            <option value="mil">mil (0.001 in)</option>
+            <option value="in">inch (in)</option>
+            <option value="ft">foot (ft)</option>
+            <option value="yd">yard (yd)</option>
+            <option value="mi">mile (mi)</option>
+            <option value="nm">nanometer (nm)</option>
+            <option value="μm">micrometer (μm)</option>
+            <option value="mm">millimeter (mm)</option>
+            <option value="cm">centimeter (cm)</option>
+            <option value="m" selected>meter (m)</option>
+            <option value="km">kilometer (km)</option>
+          </select>
+        </div>
+        <div>
+          <label for="to">To:</label>
+          <select id="to">
+            <option value="mil">mil (0.001 in)</option>
+            <option value="in">inch (in)</option>
+            <option value="ft">foot (ft)</option>
+            <option value="yd">yard (yd)</option>
+            <option value="mi">mile (mi)</option>
+            <option value="nm">nanometer (nm)</option>
+            <option value="μm">micrometer (μm)</option>
+            <option value="mm">millimeter (mm)</option>
+            <option value="cm">centimeter (cm)</option>
+            <option value="m">meter (m)</option>
+            <option value="km" selected>kilometer (km)</option>
+          </select>
+        </div>
+        <div>
+          <label for="value">Value:</label>
+          <input type="number" id="value" placeholder="Enter value" />
+        </div>
+        <button onclick="convertDistance()">Convert</button>
+        <p id="result"></p>
+      </div>
+
+      <div class="center">
+        <a href="../index.html">
+          <button>
+            More Calculators
+            <img src="../../images/next.png" alt="Next" />
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Yash Agrawal.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
