@@ -31,10 +31,8 @@
                 aria-label="Weight in kilograms"
                 required
               />
-
-          </div>
-          <div class="input-group">
-          </div>
+            </div>
+            <div class="input-group"></div>
             <label for="height">Height:</label>
             <div class="input-wrapper">
               <span>📏</span>
@@ -44,16 +42,16 @@
                 name="height"
                 placeholder="Enter height"
                 aria-label="Height"
-                style="width: 100%;"
+                style="width: 100%"
               />
-              <div id="height-inputs" style="display: none;">
+              <div id="height-inputs" style="display: none">
                 <input
                   type="number"
                   id="feet"
                   name="feet"
                   placeholder="Feet"
                   aria-label="Feet"
-                  style="width: 48%; margin-right: 4%;"
+                  style="width: 48%; margin-right: 4%"
                 />
                 <input
                   type="number"
@@ -61,18 +59,20 @@
                   name="inches"
                   placeholder="Inches"
                   aria-label="Inches"
-                  style="width: 48%;"
+                  style="width: 48%"
                 />
               </div>
-              <select id="height-unit" aria-label="Height unit" onchange="toggleHeightInputs()">
+              <select
+                id="height-unit"
+                aria-label="Height unit"
+                onchange="toggleHeightInputs()"
+              >
                 <option value="meters">Meters</option>
                 <option value="centimeters">Centimeters</option>
                 <option value="feet-inches">Feet/Inches</option>
               </select>
             </div>
           </div>
-          
-          
 
           <center>
             <button

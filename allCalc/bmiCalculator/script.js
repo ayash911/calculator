@@ -5,12 +5,12 @@ function toggleHeightInputs() {
 
   if (heightUnit === "feet-inches") {
     document.getElementById("height-unit").style.marginTop = "10px";
-    heightInput.style.display = "none"; // Hide the single input box
-    heightInputs.style.display = "flex"; // Show the feet/inches input fields
+    heightInput.style.display = "none";
+    heightInputs.style.display = "flex";
   } else {
     document.getElementById("height-unit").style.marginTop = "0px";
-    heightInput.style.display = "block"; // Show the single input box
-    heightInputs.style.display = "none"; // Hide the feet/inches input fields
+    heightInput.style.display = "block";
+    heightInputs.style.display = "none";
   }
 }
 
@@ -20,7 +20,8 @@ function calculateBMI() {
   let heightInMeters;
 
   if (isNaN(weight)) {
-    document.getElementById("result").innerText = "Please enter a valid weight.";
+    document.getElementById("result").innerText =
+      "Please enter a valid weight.";
     return;
   }
 
@@ -31,11 +32,12 @@ function calculateBMI() {
   } else if (heightUnit === "feet-inches") {
     const feet = parseFloat(document.getElementById("feet").value) || 0;
     const inches = parseFloat(document.getElementById("inches").value) || 0;
-    heightInMeters = (feet * 0.3048) + (inches * 0.0254); // Convert feet and inches to meters
+    heightInMeters = feet * 0.3048 + inches * 0.0254;
   }
 
   if (isNaN(heightInMeters) || heightInMeters <= 0) {
-    document.getElementById("result").innerText = "Please enter a valid height.";
+    document.getElementById("result").innerText =
+      "Please enter a valid height.";
     return;
   }
 
