@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #4caf50;
+  font-size: 2rem;
+}
+
+.generator {
+  scale: 0.96;
+  margin: 20px auto;
+  margin-bottom: 0;
+  text-align: left;
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #4caf50;
+}
+
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.more-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.more-btn img {
+  margin-left: 10px;
+  height: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.password {
+  display: grid;
+  grid-template-columns: auto min-content;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.password input {
+  padding: 7px 10px;
+  border: none;
+  color: #333;
+  background-color: #ddd;
+}
+
+.password input:focus {
+  border: none;
+  outline: none;
+}
+
+.password button {
+  border-radius: 0;
+}
+
+.range {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.range span {
+  background-color: #ddd;
+  padding: 10px;
+  margin-left: 20px;
+  min-width: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.options label {
+  display: block;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+button:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+.generate {
+  width: 50%;
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1024px) {
+  .generate {
+    width: 100%;
+  }
+  .generator {
+    width: 70%;
+  }
+
+  .more-btn {
+    width: 40%;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .generate {
+    width: 100%;
+  }
+  .generator {
+    width: 90%;
+  }
+
+  .more-btn {
+    font-size: 0.9em;
+    width: 50%;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .generate {
+    width: 100%;
+  }
+  .more-btn {
+    font-size: 0.8em;
+    width: 70%;
+    padding: 10px;
+  }
+
+  .range span {
+    margin-left: 10px;
+    padding: 5px;
+  }
+}
