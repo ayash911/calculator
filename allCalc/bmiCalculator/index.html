@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body Mass Index Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <h2>Body Mass Index Calculator</h2>
+    <div class="converter">
+      <center>
+      <h3>Calculate Your BMI</h3>
+      </center>
+      <form id="bmi-form">
+        <div class="input-group">
+          <label for="weight">Weight (kg):</label>
+          <div class="input-wrapper">
+            <span>⚖️</span>
+            <input 
+              type="number" 
+              id="weight" 
+              name="weight" 
+              placeholder="Enter weight in kilograms" 
+              aria-label="Weight in kilograms" 
+              required />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="height">Height (m):</label>
+          <div class="input-wrapper">
+            <span>📏</span>
+            <input 
+              type="number" 
+              id="height" 
+              name="height" 
+              placeholder="Enter height in meters" 
+              aria-label="Height in meters" 
+              required />
+          </div>
+        </div>
+        <center>
+        <button type="button" class="calculate-btn" onclick="calculateBMI()">Calculate</button>
+      </center>
+      </form>
+      <center>
+      <p id="result"></p>
+    </center>
+    </div>
+
+    <div class="center">
+      <a href="../index.html">
+        <button class="more-btn">
+          More Calculators
+          <img src="../../images/next.png" alt="Next" />
+        </button>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Yash Agrawal.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

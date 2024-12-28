@@ -1,104 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Calculators</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <h2>All Calculators</h2>
-    </main>
-    <footer>
-      <p>&copy; 2024 Yash Agrawal.</p>
-    </footer>
-  </body>
-</html>
+BMI Calculator
+Calculate Body Mass Index based on height and weight.
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+Age Calculator
+Determine age or time difference between two dates.
 
-  main {
-    flex: 1;
-  }
+Loan EMI Calculator
+Calculate Equated Monthly Installment (EMI) for loans.
 
-  h2 {
-    text-align: center;
-    margin-top: 20px;
-    color: #4CAF50;
-  }
+Tip Calculator
+Quickly split bills and calculate tips.
 
-  p {
-    text-align: center;
-    max-width: 800px;
-    margin: 10px auto;
-    font-size: 1.1em;
-  }
+Scientific Calculators
+Quadratic Equation Solver
+Find roots of a quadratic equation.
 
-  .center {
-    margin: 20px auto;
-    text-align: center;
-    width: 60%;
-    padding: 20px;
-    border: 3px solid #4CAF50;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+Circle Calculator
+Calculate area, circumference, and diameter based on radius.
 
-  button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-  }
+Triangle Area Calculator
+Calculate the area of a triangle using base and height or Heron's formula.
 
-  button img {
-    height: 16px;
-    width: 16px;
-    margin-left: 10px;
-  }
+Conversion Tools
+Temperature Converter
+Convert between Celsius, Fahrenheit, and Kelvin.
 
-  button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+Time Converter
+Convert between hours, minutes, and seconds.
 
-  footer {
-    text-align: center;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 0;
-  }
+Data Unit Converter
+Convert between bytes, KB, MB, GB, etc.
 
-  @media (max-width: 768px) {
-    .center {
-      width: 90%;
-    }
+Math and Financial Tools
+GST Calculator
+Add or remove GST from a given amount.
 
-    button {
-      font-size: 0.9em;
-      padding: 8px 15px;
-    }
+Savings Calculator
+Estimate future savings with regular deposits and interest rates.
 
-    button img {
-      height: 14px;
-      width: 14px;
-    }
-  }
+Currency Exchange Rate Tracker
+Display live currency rates in addition to conversions.
+
+Advanced Calculators
+Mortgage Calculator
+Calculate monthly payments, total interest, and principal for a mortgage loan.
+
+Profit Margin Calculator
+Calculate profit margins for businesses or sales.
+
+Date Difference Calculator
+Calculate the number of days, weeks, or months between two dates.
+
+Creative and Fun Calculators
+Love Compatibility Calculator
+A fun tool for percentage-based compatibility (not scientific).
+
+Random Name Picker
+Enter names and pick a random one (useful for games or decision-making).
+
+Workout Pace Calculator
+Calculate pace and speed based on time and distance.
