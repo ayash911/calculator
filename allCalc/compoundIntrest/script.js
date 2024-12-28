@@ -39,6 +39,6 @@ function calculateCompoundInterest() {
   document.getElementById("result").innerHTML = `
     <strong>Total Amount:</strong> ₹${formatNumber(total.toFixed(2))}<br>
     <strong>Compound Interest:</strong> ₹${formatNumber(compoundInterest.toFixed(2))}<br>
-    <strong>Effective Annual Percentage Rate:</strong> ${effectiveRate.toFixed(2)}%
+    <strong>Effective Annual Percentage Rate:</strong> ${formatNumber(effectiveRate.toFixed(2))}%
   `;
 }
