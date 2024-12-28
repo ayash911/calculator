@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compound Interest Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h2>Compound Interest Calculator</h2>
+    <div class="converter">
+      <center>
+        <h3>Calculate Compound Interest</h3>
+      </center>
+      <form id="interest-form">
+        <div class="input-group">
+          <label for="princi">Principal:</label>
+          <div class="input-wrapper">
+            <span>₹</span>
+            <input 
+              type="number" 
+              id="princi" 
+              name="principal" 
+              placeholder="Enter amount" 
+              aria-label="Principal amount" 
+              required />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="rate">Rate (%):</label>
+          <div class="input-wrapper">
+            <span>%</span>
+            <input 
+              type="number" 
+              id="rate" 
+              name="rate" 
+              placeholder="Enter rate" 
+              aria-label="Rate of interest" 
+              required />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="time">Time (Years):</label>
+          <div class="input-wrapper">
+            <span>⏰</span>
+            <input 
+              type="number" 
+              id="time" 
+              name="time" 
+              placeholder="Enter time (in years)" 
+              aria-label="Time period" 
+              required />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="frequency">Compounding Frequency:</label>
+          <div class="input-wrapper">
+            <span><img id="repeat" src="repeat.png" alt="r"></span>
+            <select id="frequency" name="frequency" aria-label="Compounding Frequency" required>
+              <option value="1">Annually</option>
+              <option value="4">Quarterly</option>
+              <option value="12">Monthly</option>
+            </select>
+          </div>
+        </div>
+        <center>
+          <button type="button" class="calculate-btn" onclick="calculateCompoundInterest()">Calculate</button>
+        </center>
+      </form>
+      <center>
+        <p id="result"></p>
+      </center>
+    </div>
+    <div class="center">
+      <a href="../index.html">
+        <button class="more-btn">
+          More Calculators
+          <img src="../../images/next.png" alt="Next" />
+        </button>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Yash Agrawal.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
