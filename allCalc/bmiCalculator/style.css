@@ -215,3 +215,8 @@ footer {
     width: 100%;
   }
 }
+
+
+select:hover {
+  cursor: pointer;
+}

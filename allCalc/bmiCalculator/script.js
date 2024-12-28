@@ -19,9 +19,8 @@ function calculateBMI() {
   const weight = parseFloat(document.getElementById("weight").value);
   let heightInMeters;
 
-  if (isNaN(weight)) {
-    document.getElementById("result").innerText =
-      "Please enter a valid weight.";
+  if (isNaN(weight) || weight <= 0) {
+    document.getElementById("result").innerText = "Please enter a valid weight.";
     return;
   }
 
@@ -42,5 +41,20 @@ function calculateBMI() {
   }
 
   const bmi = weight / (heightInMeters * heightInMeters);
-  document.getElementById("result").innerText = `Your BMI is ${bmi.toFixed(2)}`;
+  let category;
+  if (bmi < 18.5) {
+    category = "Underweight";
+  } else if (bmi >= 18.5 && bmi < 24.9) {
+    category = "Normal weight";
+  } else if (bmi >= 25 && bmi < 29.9) {
+    category = "Overweight";
+  } else {
+    category = "Obese";
+  }
+
+  document.getElementById(
+    "result"
+  ).innerText = `Your BMI is ${bmi.toFixed(
+    2
+  )}. This is considered ${category}.`;
 }
