@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <h2>Payroll Management System</h2>
+      <div class="converter">
+        <h1>Payroll Management</h1>
+        <p class="description">
+          Easily calculate the minimum number of notes to return based on the
+          bill amount and the cash provided.
+        </p>
+
+        <div class="input-group">
+          <label for="bill">Enter the Bill Amount (₹):</label>
+          <input
+            id="bill"
+            type="number"
+            placeholder="Enter bill amount"
+            min="0"
+            aria-label="Enter bill amount"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="cash">Cash Given (₹):</label>
+          <input
+            id="cash"
+            type="number"
+            placeholder="Enter cash given"
+            min="0"
+            aria-label="Enter cash given"
+            required
+          />
+        </div>
+
+        <button id="btn">Calculate</button>
+        <p id="error" role="alert"></p>
+
+        <table class="table">
+          <caption>
+            Return Change
+          </caption>
+          <thead>
+            <tr>
+              <th>Notes (₹)</th>
+              <th>Number of Notes</th>
+            </tr>
+          </thead>
+          <tbody id="notes-table-body"></tbody>
+        </table>
+      </div>
+
+      <div class="center">
+        <a href="../index.html">
+          <button class="more-btn">
+            More Calculators
+            <img src="../../images/next.png" alt="Next" />
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Yash Agrawal.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

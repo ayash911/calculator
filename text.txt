@@ -1,6 +1,3 @@
-BMI Calculator
-Calculate Body Mass Index based on height and weight.
-
 Age Calculator
 Determine age or time difference between two dates.
 
